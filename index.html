@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Do you enjoy coffee?</h1>
+  <p id="description">Thank you for taking this survey</p>
+  <form id="survey-form">
+    <fieldset>
+
+      <label for="name" id="name-label"> Name: <input id="name" name="name" type="text" placeholder="Enter your name"
+          required /></label>
+
+      <label for="email" id="email-label">Email: <input id="email" name="email" type="email" required
+          placeholder="Enter your email" /></label>
+
+      <label for="number" id="number-label">Age (Optionl): <input id="number" name="age" type="number" min="10" max="99"
+          placeholder="10" /></label>
+
+      <label for="dropdown">How many coffees a day do you drink?
+        <select id="dropdown" name="dropdown">
+          <option value="">Select an option</option>
+          <option value="1">One or two</option>
+          <option value="2">Way more then two</option>
+          <option value="3">Coffee is not cool</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>How do you like your coffee?</legend>
+      <label><input id="espresso" type="radio" name="atribute" value="espresso" checked> Espresso</label>
+      <label><input id="filter" type="radio" name="atribute" value="filter">Filter Coffee</label>
+      <label><input id="anyway" type="radio" name="atribute" value="anyway">Any way, I just want a cup of it!</label>
+    </fieldset>
+    <fieldset>
+
+      <legend>How you like it roasted?</legend>
+      <input id="light" type="checkbox" name="light" value="loving" checked> <label for="loving">Light</label>
+      <input id="medium" type="checkbox" name="medium" value="lazy"> <label for="medium">Medium</label>
+      <input id="dark" type="checkbox" name="dark" value="dark"> <label for="dark">Dark</label>
+    </fieldset>
+
+
+    <fieldset>
+      <label for="comments">Tell us what you love about coffee:
+        <textarea id="comments" name="bio" rows="3" cols="30" placeholder="Coffee is a hug in a mug."></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit" />
+  </form>
+
+</body>
+
+</html>
