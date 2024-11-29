@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Survey Form</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <div id="content-wrapper">
   <h1 id="title">Do you enjoy coffee?</h1>
   <p id="description">Thank you for taking this survey</p>
   <form id="survey-form">
@@ -25,13 +27,14 @@
 
       <label for="dropdown">
         How many coffees a day do you drink?
+       </label>
         <select id="dropdown" name="dropdown">
           <option value="">Select an option</option>
           <option value="1">One or two</option>
           <option value="2">Way more than two</option>
           <option value="3">Coffee is not cool</option>
         </select>
-      </label>
+     
     </fieldset>
 
     <fieldset>
@@ -49,13 +52,12 @@
     </fieldset>
 
     <fieldset>
-      <label for="comments">Tell us what do you love about coffee!
-        <textarea id="comments" name="bio" rows="3" cols="30" placeholder="Coffee is a hug in a mug."></textarea>
-      </label>
+      <label for="comments">Tell us what do you love about coffee! </label>
+      <textarea id="comments" name="bio" rows="3" cols="30" placeholder="Coffee is a hug in a mug."></textarea>
     </fieldset>
     <input type="submit" id="submit" value="Submit" />
   </form>
-
+</div>
 </body>
 
 </html>
